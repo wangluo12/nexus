@@ -8,13 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
  * RandomPasswordUtilsTest
  *
  * @author wangl
- * @date 2024/4/11
+ * @since  2024/4/11
  */
 public class RandomPasswordUtilsTest {
 
     @Test
     public void testGenerateRandomString_validLength() {
-        String randomString = RandomPasswordUtils.generateRandomString(8, 10);
+        String randomString = RandomPasswordUtils.generateRandomString(1, 10);
         assertNotNull(randomString);
         assertTrue(randomString.length() >= 8 && randomString.length() <= 10);
     }

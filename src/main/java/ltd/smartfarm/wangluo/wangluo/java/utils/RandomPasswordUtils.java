@@ -15,9 +15,22 @@ public class RandomPasswordUtils {
     //private static final String SPECIAL_CHARACTERS = "!@#$%^&*()-_=+[]{}|;:'\",.<>?/`~";
     private static final String SPECIAL_CHARACTERS = "!@#$%&*";
 
+    /**
+     * 生成指定长度范围内的随机密码
+     *
+     * @param minLength 密码最小长度
+     * @param maxLength 密码最大长度
+     * @return 生成的随机密码
+     */
     public static String generateRandomString(int minLength, int maxLength) {
-        if (minLength < 8 || maxLength > 15 || minLength > maxLength) {
-            throw new IllegalArgumentException("Invalid length range");
+        if (minLength < 1) {
+            throw new IllegalArgumentException("最小长度不能小于1");
+        }
+        if (maxLength > 32) {
+            throw new IllegalArgumentException("最大长度不能大于32");
+        }
+        if (minLength > maxLength) {
+            throw new IllegalArgumentException("最小长度不能大于最大长度");
         }
 
         SecureRandom random = new SecureRandom();
