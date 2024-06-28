@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ltd.smartfarm.wangluo</groupId>
     <artifactId>wangluo-java-utils</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>wangluo-java-utils</name>
     <description>wangluo-java-utils</description>
     <url>https://github.com/wangluo12/wangluo-java-utils</url>
