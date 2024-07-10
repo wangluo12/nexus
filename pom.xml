@@ -21,6 +21,10 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <serverId>central</serverId><!-- 服务id 也就是setting.xml中的servers.server.id -->
         <spring-boot.version>2.6.13</spring-boot.version>
+        <junit-jupiter-api.version>5.8.2</junit-jupiter-api.version>
+        <hutool.version>5.8.27</hutool.version>
+        <lombok.version>1.18.32</lombok.version>
+        <commons-lang3.version>3.13.0</commons-lang3.version>
     </properties>
     <dependencies>
         <dependency>
@@ -31,6 +35,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.13.0</version>
         </dependency>
     </dependencies>
 
@@ -62,7 +81,7 @@
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-api</artifactId>
-                <version>5.8.2</version>
+                <version>${junit-jupiter-api.version}</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
